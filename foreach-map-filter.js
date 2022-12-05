@@ -99,11 +99,12 @@ Examples:
 */
 
 function doubleValuesWithMap(arr) {
-    arr.map(function(val) {
-        val = val * 2;
-    });
-    return arr;
-}
+    return arr.map(function(val) {
+           return val * 2;
+        
+    })};
+    
+
 
 /*
 Write a function called valTimesIndex which accepts an array and returns a new array with each value multiplied by the index it is currently at in the array.
@@ -114,8 +115,10 @@ Examples:
 */
 
 function valTimesIndex(arr){
-    
-}
+    return arr.map(function(val){
+        return val * arr.indexOf(val);
+    });
+};
 
 /*
 Write a function called extractKey which accepts an array of objects and some key and returns a new array with the value of that key in each object.
@@ -125,7 +128,9 @@ Examples:
 */
 
 function extractKey(arr, key){
-    
+    return arr.map(function(val){
+        return arr.push(Object.values(val))
+    })
 }
 
 /*
