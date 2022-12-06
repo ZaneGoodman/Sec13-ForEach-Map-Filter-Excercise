@@ -214,13 +214,9 @@ Examples:
 */
 
 function doubleOddNumbers(arr) {
-    
-     arr.map(function(val) {
-             return val * 2;
-    });
-    return arr.filter(function(val){
+     return arr.filter(function(val){
         return val % 2 === 1;
-    
-    })
-   
-}
+        }).map(function(val) {
+        return  val * 2;
+});
+};
